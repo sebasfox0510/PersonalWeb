@@ -13,9 +13,9 @@ font-family: "Roboto Mono", monospace; */
 }
 
 body{
-    background-color: black;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
-
 
 header{
     position: fixed; /* Esto hace que el header se quede fijo en la parte superior */
@@ -196,7 +196,7 @@ section{
 /* Aca vamos a hacer media queries para que la web sea responsive */
 
 @media (max-width:992px){
-    section{
+    section {
         padding: 0 3%;
         transition: .2s;
     }
@@ -214,7 +214,7 @@ section{
         margin: 10% 0 0 10%;
     }
 
-    .hero-text p{
+    .hero-text p {
         font-size: 70%;
     }
 
@@ -227,8 +227,7 @@ section{
     }
 }
 
-@media (max-width:768px){
-
+@media (max-width: 768px){
 
     .menu-icon-action{
         display: block;
@@ -243,11 +242,11 @@ section{
         padding-top: 100px;
     }
 
-    .hero-img img{
+    .hero-img img {
         margin: 0;
     }
 
-    .hero{
+    .hero {
         height: 100%;
         gap: 1rem;
         grid-template-columns: 1fr;
@@ -259,7 +258,7 @@ section{
         right: -100%;
         width: 200px;
         height: 180px;
-        background-color: #041822ef;
+        background-color: #021719ef;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -267,7 +266,7 @@ section{
         transition: all .5s ease-out;
     }
 
-    .navlist a{
+    .navlist a {
         display: block;
         margin: 7px 0;
     }
@@ -275,5 +274,6 @@ section{
     #menu-toggle:checked + label.menu-icon-action + ul{
         right: 0;
     }
+
 
 }
